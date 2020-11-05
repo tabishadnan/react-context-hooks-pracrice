@@ -1,9 +1,14 @@
 import './App.css';
+import Counter from './components/Counter';
+import ThemeContextProvider from './context/ThemeContext';
 
 function App() {
   return (
     <div className="App">
-      <h1>react-hooks-context-practice</h1>
+      <ThemeContextProvider>
+      <h1>React Hooks Context Practice</h1> 
+      <Counter />
+      </ThemeContextProvider>
     </div>
   );
 }
